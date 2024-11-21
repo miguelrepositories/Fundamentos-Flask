@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Modelos</title>
+</head>
+<body>
+{# Comentário Jinja2 #}
+    <p>modelo</p>
+    <p>
+    	{{ x + z }}
+    </p>
+{% if x >= 50 %}
+<p>X é maior ou igual a 50.</p>
+{% else %}
+<p>X é menor que 50.</p>
+{% endif %}
+<hr>
+<table>
+    {% for k, v in query.items() %}
+    <tr>
+        <th>{{ k }}</th>
+        <td>{{ v }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
